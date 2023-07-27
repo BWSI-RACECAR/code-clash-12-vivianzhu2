@@ -9,7 +9,7 @@ class Solution:
             rb=0
             lc=0
             rc=0
-            for i in range(0, len(parenthesis)-1):
+            for i in range(len(parenthesis)):
                 if(parenthesis[i]=="("):
                     lp+=1
                 if( parenthesis[i] == ")"):
@@ -22,10 +22,14 @@ class Solution:
                      lc+=1
                 if parenthesis[i]=='}':
                      rc+=1
+            print(lp)
             if( lp==rp and lb==rb and lc== rc):
                  return True
             else:
                  return False
+            
+
+
             #TODO: Write code below to returnn a boolean value with the solution to the prompt.
             pass
 
